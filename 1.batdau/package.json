@@ -1,0 +1,16 @@
+{
+  "name": "1.batdau",
+  "version": "1.0.0",
+  "description": "PhamAn hoc node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "lmao",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
