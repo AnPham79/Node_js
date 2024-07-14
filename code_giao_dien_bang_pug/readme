@@ -1,0 +1,19 @@
+trong phần này chúng ta sẽ hiểu về view engine () pug(jade) , ejs, handleBars
+- pug(jade)
+-> p #{name} // điểm dễ nhận biết là nó k có thẻ đống còn lại thì viết như thẻ html bth
+
+
+-ejs 
+-> <p><%= name %></p>
+
+-handleBars
+-><p>{{ name }}</p>
+
+----------------------------------------------------------------------------------
+
+cách sử dụng pug phải khai báo 
+app.set('view engine', 'pug') để nó hiểu là mình sử dụng view engine có tên là pug nên nó sẽ
+tìm và nạp các tệp có đuôi pug
+
+pug doc https://pugjs.org/api/getting-started.html
+

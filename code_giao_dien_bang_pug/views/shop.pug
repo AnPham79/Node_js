@@ -1,0 +1,15 @@
+extends layouts/layout.pug
+
+block content
+  .container.mt-4
+    h1.text-center Sản phẩm của chúng tôi
+    .row
+      if products.length > 0
+        each product in products
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(src="https://minitech.vn/wp-content/uploads/2022/10/Screenshot_4-57.png" alt=product.title)
+              .card-body
+                h5.card-title= product.title
+      else
+        p.text-center Không có sản phẩm nào

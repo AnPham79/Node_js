@@ -1,0 +1,6 @@
+extends layouts/layout.pug
+
+block content
+  form(action="/add-product" method="POST")
+    input(type="text" name="title" placeholder="Product Title" required)
+    button(type="submit") Add Product

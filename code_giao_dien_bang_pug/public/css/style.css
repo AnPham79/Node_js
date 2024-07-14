@@ -1,0 +1,5 @@
+.nav-link.active {
+    background-color: #007bff; /* Màu nền của liên kết khi đang hoạt động */
+    color: #fff; /* Màu chữ của liên kết khi đang hoạt động */
+    border-radius: .25rem; /* Bo tròn góc của liên kết khi đang hoạt động */
+  }
