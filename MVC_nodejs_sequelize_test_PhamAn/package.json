@@ -1,0 +1,21 @@
+{
+  "name": "mvc_nodejs_sequelize_test_phaman",
+  "version": "1.0.0",
+  "description": "pham an code nodejs with MVC and sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "app.js"
+  },
+  "author": "PhamAn",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.3",
+    "nodemon": "^3.1.4",
+    "sequelize": "^6.37.3"
+  }
+}

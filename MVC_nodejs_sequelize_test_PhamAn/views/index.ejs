@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <ul>
+        <% users.forEach(user => { %>
+            <li><%= user.firstName %> <%= user.lastName %></li>
+        <% }) %>
+    </ul>
+    <form action="/create-user" method="POST">
+        <input type="text" name="user_name" placeholder="Nhập tên của bạn" required>
+        <input type="email" name="email" placeholder="Nhập email của bạn" required>
+        <input type="text" name="password" placeholder="Nhập password của bạn" required>
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
