@@ -1,0 +1,3 @@
+// tạo tài khoản cluster trong https://cloud.mongodb.com/v2/669bf2dc0254542900993c0c#/clusters
+
+// sau đó vào phần database nhấn connect -> driver -> coppy link môngo
