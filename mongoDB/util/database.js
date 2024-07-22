@@ -1,28 +1,29 @@
 const mongodb = require('mongodb');
-
-const mongoClient = mongodb.MongoClient;
+const MongoClient = mongodb.MongoClient;
 
 let _db;
 
-const mongoConnect = (callback) => {
-  mongoClient.connect('mongodb+srv://anpnb79:thienha10@cluster0.h4ybele.mongodb.net/nodeJsMongo?retryWrites=true&w=majority&appName=Cluster0')
-  .then(client => {
-    console.log('Kết nối thành công');
-    _db = client.db('nodeJsMongo');
-    callback();
-  })
-  .catch(err => {
-    console.error('Lỗi kết nối:', err);
-    throw(err);
-  });
-}
+const mongoConnect = callback => {
+  MongoClient.connect(
+    'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/shop?retryWrites=true'
+  )
+    .then(client => {
+      console.log('Connected!');
+      _db = client.db();
+      callback();
+    })
+    .catch(err => {
+      console.log(err);
+      throw err;
+    });
+};
 
 const getDb = () => {
-  if(_db) {
+  if (_db) {
     return _db;
   }
-  throw 'Không có kết nối đến cơ sở dữ liệu'
-}
+  throw 'No database found!';
+};
 
 exports.mongoConnect = mongoConnect;
 exports.getDb = getDb;
